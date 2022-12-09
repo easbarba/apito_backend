@@ -1,0 +1,6 @@
+.env.example
+.gitignore
+.git
+Makefile
+README.md
+LICENSE
