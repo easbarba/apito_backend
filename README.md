@@ -1,39 +1,23 @@
 # Apito | backend
 
-Evaluate soccer referees' performance.
-
 ## Environment Variables
 
-All environment variables needed to correctly run `apito-backend` are listed in the file `.env-example`.
+`apito-backend` needs that the listed environment variables in `.env-example` to be available to correctly run.
 
 ## Database
 
 A database named in the `$DATABASE_URL` environment variable should be available. 
 
-## Endpoints
+## OpenAPI
 
-### Controllers
-
-    /evaluations
-
-
-    /greet
-
-
-### Domains
-
-    /users
-
-    
-    /matches
+| API name       | Path          |
+|----------------|---------------|
+| openapi {JSON} | /openapi      |
+| openapi {YAML} | /openapi.yaml |
+| openapi docs   | /openapi/ui   |
 
 
-    /referees
-
-
-### Misc
-
-TODO
+### Container images
 
 [Docker Hub](https://hub.docker.com/r/easbarbosa/apito)
 
