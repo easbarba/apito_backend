@@ -1,0 +1,10 @@
+INSERT INTO referees (name, state) VALUES ('Raphael Claus', 'Sao Paulo');
+INSERT INTO referees (name, state) VALUES ('Ricardo Marques Ribeiro', 'Minas Gerais');
+INSERT INTO referees (name, state) VALUES ('Wilton Pereira Sampaio', 'Goias');
+INSERT INTO referees (name, state) VALUES ('Anderson Daronco', 'Rio Grande do Sul');
+INSERT INTO referees (name, state) VALUES ('Marcelo Aparecido de Souza', 'Sao Paulo');
+INSERT INTO referees (name, state) VALUES ('Marcelo de Lima Henrique', 'Rio de Janeiro');
+INSERT INTO referees (name, state) VALUES ('Sandro Meira Ricci', 'Minas Gerais');
+INSERT INTO referees (name, state) VALUES ('Rafael Traci', 'Parana');
+INSERT INTO referees (name, state) VALUES ('Dewson Fernando Freitas da Silva', 'Parana');
+INSERT INTO referees (name, state) VALUES ('Pericles Bassols Pegado Cortez', 'Rio de Janeiro');
