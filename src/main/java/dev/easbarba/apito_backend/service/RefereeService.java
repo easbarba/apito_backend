@@ -63,10 +63,8 @@ public class RefereeService {
         return ResponseEntity.status(HttpStatus.OK).body(refereeRepository.save(refFound));
     }
 
-    public ResponseEntity<?> delete(Long id) {
+    public void delete(Long id) {
         var ref = refereeRepository.findById(id).orElse(null);
         refereeRepository.delete(ref);
-
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Referee deleted successfully.");
     }
 }
