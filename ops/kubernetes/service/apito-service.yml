@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: apito
+  name: apito
+spec:
+  ports:
+    - name: 80-80
+      nodePort: 30080
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: apito
+  type: NodePort

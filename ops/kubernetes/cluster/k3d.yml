@@ -1,0 +1,11 @@
+apiVersion: k3d.io/v1alpha4
+kind: Simple
+metadata:
+  name: apito
+servers: 1
+agents: 2
+ports:
+  - port: 8080:30080
+    nodeFilters:
+      - agent:0
+

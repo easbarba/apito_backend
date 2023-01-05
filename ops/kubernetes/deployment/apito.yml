@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apito-deployment
+  labels:
+    app: apito
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apito
+  template:
+    metadata:
+      labels:
+        app: apito
+    spec:
+      containers:
+        - name: apito
+          image:  easbarbosa/apito:backend-0.0.1
+          ports:
+            - containerPort: 8080
