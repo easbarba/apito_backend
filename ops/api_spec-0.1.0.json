@@ -1,0 +1,109 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "Evaluate soccer referees' performance.",
+    "title": "Apito backend API",
+    "contact": {
+      "name": "EAS Barba",
+      "url": "https://easbarba.github.io",
+      "email": "easbarba@outlook.com"
+    },
+    "version": "0.1.0"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "paths": {
+    "/referees": {
+      "get": {
+        "description": "Returns list of referees",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "referees"
+        ],
+        "operationId": "GetReferee"
+      },
+      "post": {
+        "description": "Create a new referee",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "referees"
+        ],
+        "operationId": "NewReferee"
+      }
+    },
+    "/referees/search": {
+      "get": {
+        "description": "Search referees based on tags",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "referees"
+        ],
+        "operationId": "FindReferee",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "referee tag",
+            "name": "tag",
+            "in": "query",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/referees/{id}": {
+      "put": {
+        "description": "Update an existing referee",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "referees"
+        ],
+        "operationId": "UpdateReferee",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "ID of the referee",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "delete": {
+        "description": "Delete an existing referee",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "referees"
+        ],
+        "operationId": "DeleteReferee",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "ID of the referee",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    }
+  }
+}

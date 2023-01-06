@@ -10,5 +10,5 @@ RUN go build -race -ldflags "-extldflags '-static'" -o ./apito .
 # FINAL STAGE
 FROM golang:1.19-alpine
 COPY --from=builder /app/apito /opt/apito
-EXPOSE 8888
+EXPOSE 8080
 ENTRYPOINT [ "/opt/apito" ]

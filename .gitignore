@@ -3,12 +3,6 @@
 *.log
 tmp/
 
-# Artifacts
-.local
-
-# Misc
-.env
-
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -31,3 +25,7 @@ go.work
 # Artifacts
 apito
 apito_backend
+.local
+
+# Misc
+.env
