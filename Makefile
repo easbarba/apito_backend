@@ -27,3 +27,6 @@ api:
 
 watch:
 	CompileDaemon --build="go build -o ./${NAME} ." --command="./${NAME}"
+
+dbclean:
+	PGPASSWORD=${DATABASE_PASSWORD} psql -U apito -d apito_development -a -f ops/sql/clean.sql
